@@ -7,8 +7,8 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             <img
-              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-              className="mr-3 h-12"
+              src="https://i.pinimg.com/736x/8b/ee/c0/8beec0ff2fd15e00733763b19a84bf06.jpg"
+              className="mr-3 h-14"
               alt="Logo"
             />
           </Link>
@@ -21,7 +21,7 @@ export default function Header() {
             </Link>
             <Link
               to="#"
-              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+              className="text-white bg-green-200 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
             >
               Get started
             </Link>
@@ -34,11 +34,11 @@ export default function Header() {
               <li>
                 <NavLink
                   to="/"
-                  className={(isactive) =>
+                  className={({ isActive }) =>
                     /** this logic to highlight link test on active url so here we use css callback stuff  here we get build in variavle isactive*/
                     `block py-2 pr-4 pl-3 duration-200 border-b ${
-                      isactive ? " text-gray-700" : "text-orange-700"
-                    } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      isActive ? " text-green-200" : "text-gray-700"
+                    } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-green-200 lg:p-0`
                   }
                 >
                   Home
@@ -47,11 +47,11 @@ export default function Header() {
               <li>
                 <NavLink
                   to="/about"
-                  className={(isactive) =>
+                  className={({ isActive }) =>
                     /** this logic to highlight link test on active url so here we use css callback stuff  here we get build in variavle isactive*/
                     `block py-2 pr-4 pl-3 duration-200 border-b ${
-                      isactive ? " text-gray-700" : "text-orange-700"
-                    } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      isActive ? " text-green-200" : "text-gray-700"
+                    } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-green-200 lg:p-0`
                   }
                 >
                   About
@@ -60,14 +60,27 @@ export default function Header() {
               <li>
                 <NavLink
                   to="/contact"
-                  className={(isactive) =>
+                  className={({ isActive }) =>
                     /** this logic to highlight link test on active url so here we use css callback stuff  here we get build in variavle isactive*/
                     `block py-2 pr-4 pl-3 duration-200 border-b ${
-                      isactive ? " text-gray-700" : "text-orange-700"
-                    } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                      isActive ? " text-green-200" : "text-gray-700"
+                    } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-green-200 lg:p-0`
                   }
                 >
                   Contact
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/github"
+                  className={({ isActive }) =>
+                    /** this logic to highlight link test on active url so here we use css callback stuff  here we get build in variavle isactive*/
+                    `block py-2 pr-4 pl-3 duration-200 border-b ${
+                      isActive ? " text-green-200" : "text-gray-700"
+                    } border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-green-200 lg:p-0`
+                  }
+                >
+                  Github
                 </NavLink>
               </li>
             </ul>

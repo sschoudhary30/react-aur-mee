@@ -11,7 +11,7 @@ export default function Home() {
             </h2>
 
             <Link
-              className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
+              className="inline-flex text-white items-center px-6 py-3 font-medium bg-green-200 rounded-lg hover:opacity-75"
               to="/"
             >
               <svg
@@ -29,9 +29,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+        <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full">
           <img
-            className="w-96"
+            className="w-96 rounded-2xl"
             src="https://i.pinimg.com/736x/2b/c1/ee/2bc1eeb31ba8aee5dedcc91811c5514d.jpg"
             alt="image1"
           />
@@ -40,14 +40,14 @@ export default function Home() {
 
       <div className="grid  place-items-center sm:mt-20">
         <img
-          className="sm:w-96 w-48"
+          className="sm:w-96 w-48 rounded-2xl"
           src="https://i.pinimg.com/736x/a2/f8/dc/a2f8dcb70af03b40f6766e2a130c81e1.jpg"
           alt="image2"
         />
       </div>
 
       <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
-        Lorem Ipsum <span className=" bg">Yojo</span>
+        Lorem Ipsum <span className="text-green-200">Yojo</span>
       </h1>
     </div>
   );

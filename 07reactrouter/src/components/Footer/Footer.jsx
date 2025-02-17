@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <img
-                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                src="https://i.pinimg.com/736x/8b/ee/c0/8beec0ff2fd15e00733763b19a84bf06.jpg"
                 className="mr-3 h-16"
                 alt="Logo"
               />
@@ -21,14 +21,28 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
-                  <Link to="/" className="hover:underline">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      `duration-200 ${
+                        isActive ? "text-green-200" : "text-gray-700"
+                      }`
+                    }
+                  >
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/about" className="hover:underline">
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) =>
+                      `duration-200 ${
+                        isActive ? "text-green-200" : "text-gray-700"
+                      }`
+                    }
+                  >
                     About
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
@@ -76,9 +90,9 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
-            © 2023
+            © 2024
             <a href="https://hiteshchoudhary.com/" className="hover:underline">
-              hiteshchoudhary
+              sureshchoudhary
             </a>
             . All Rights Reserved.
           </span>
