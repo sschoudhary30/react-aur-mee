@@ -1,0 +1,12 @@
+to solve dirty prop drilling issue
+context API is use.
+
+context API is asssocaited with react only but
+but redux use many other also like veu and next itc.
+for react we have redux toolkit or react-redux.
+
+zustand also there.
+
+we can inject context in start or later on also.
+
+good project always need state management.
