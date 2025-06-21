@@ -41,10 +41,23 @@ function App() {
     }
   };
 
+  const [name, setName] = useState("me");
+
+  const changeValue = () => {
+    if (name == "me") {
+      setName("suresh");
+    } else {
+      setName("me");
+    }
+  };
+
   return (
     <>
-      <h1>bhai aur me !!</h1>
+      <h1>bhai aur {name} !!</h1>
       <h2>Counter Value: {count}</h2>
+
+      <button onClick={changeValue}>Change name</button>
+
       <button onClick={addValue}>Add Value</button>
       <br />
       <br></br>

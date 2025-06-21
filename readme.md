@@ -41,3 +41,25 @@ React interview =>
 // onclick ko function chahiyee
 
 onClick={()=>setColor("setcolor")}
+
+ep 4
+
+create react app add js by script
+and vite add direact
+
+npx excuet, npm install and excute
+
+ep 6:
+
+createRoot create dom structure.
+and change by diff algo.
+
+Hydration when js inject.
+
+reconciliation react, git.
+
+fiber key is needed for map, reduce, filter.
+
+react me batch sending hotha hai.
+
+but if we use call back then single sending hotha hai.

@@ -1,6 +1,6 @@
 // eslint-disable-next-line react/prop-types
-const Card = ({ name, btnText = "hello ME" }) => {
-  btnText = "hello ME "; /* this more better way of it default value */
+const Cad = ({ infoN, btnText = "bhai" }) => {
+  //   let btnText = "hello me";
   return (
     <>
       <div className="relative h-[400px] w-[300px] rounded-4">
@@ -11,10 +11,10 @@ const Card = ({ name, btnText = "hello ME" }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
         <div className="absolute bottom-4 left-4 text-left">
-          <h1 className="text-lg font-semibold text-white">{name}</h1>
+          <h1 className="text-lg font-semibold text-white">{infoN.name}</h1>
           <p className="mt-2 text-sm text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-            debitis?
+            {infoN.email} <br />
+            {infoN.age}
           </p>
           <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
             {
@@ -27,4 +27,4 @@ const Card = ({ name, btnText = "hello ME" }) => {
   );
 };
 
-export default Card;
+export default Cad;
